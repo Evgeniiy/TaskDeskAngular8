@@ -1,0 +1,19 @@
+<footer class="footer">
+  <div class="container-fluid">
+    <nav class="float-left">
+      <ul>
+        <li>
+          <a (click)="openAboutDialog()" class="link"> О приложении </a>
+        </li>
+        <li>
+          {{ developer }}
+        </li>
+      </ul>
+    </nav>
+    <div class="copyright float-right">
+      Данные обнуляются при обновлении страницы&nbsp;&nbsp; ©
+      {{ year | date: 'yyyy' }} <i class="material-icons">favorite</i>
+      <span>{{ siteName }}</span>
+    </div>
+  </div>
+</footer>
